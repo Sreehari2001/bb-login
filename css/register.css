@@ -1,0 +1,2197 @@
+/* =================================================================== */
+/* Import Section
+====================================================================== */
+@import url("font-awesome.css");
+
+h1,
+h2,
+h3,
+h4,
+h5,
+h6,
+.h1,
+.h2,
+.h3,
+.h4,
+.h5,
+.h6 {
+  font-weight: 600;
+}
+
+body,
+h1,
+h2,
+h3,
+h4,
+h5,
+h6,
+.button,
+input[type="button"],
+input[type="submit"],
+input[type="text"],
+input[type="password"],
+input[type="email"],
+textarea,
+select {
+  font-family: "Open Sans", Helvetica, Arial, sans-serif;
+  font-size: 14px;
+  line-height: 20px;
+  color: #333;
+}
+
+body {
+  background-color: #f8f9fa !important;
+}
+
+h1 {
+  font-size: 28px;
+  line-height: 50px;
+  margin: 0;
+}
+
+h2 {
+  font-size: 22px;
+  line-height: 30px;
+}
+
+h3 {
+  font-size: 16px;
+  line-height: 30px;
+}
+
+h4 {
+  font-size: 14px;
+  line-height: 30px;
+}
+
+h5 {
+  font-size: 12px;
+  line-height: 24px;
+}
+
+h6 {
+  font-size: 10px;
+  line-height: 20px;
+}
+
+a {
+  text-decoration: none;
+}
+
+a:hover {
+  text-decoration: none;
+  -webkit-transition: all 0.3s ease-in-out;
+  -moz-transition: all 0.3s ease-in-out;
+  -o-transition: all 0.3s ease-in-out;
+  -ms-transition: all 0.3s ease-in-out;
+  transition: all 0.3s ease-in-out;
+  color: #555;
+}
+
+a:focus {
+  outline: none;
+  text-decoration: none;
+}
+
+.not-ie a {
+  -webkit-transition: background-color 0.2s ease, border 0.2s ease,
+    color 0.2s ease, opacity 0.2s ease-in-out;
+  -moz-transition: background-color 0.2s ease, border 0.2s ease, color 0.2s ease,
+    opacity 0.2s ease-in-out;
+  -ms-transition: background-color 0.2s ease, border 0.2s ease, color 0.2s ease,
+    opacity 0.2s ease-in-out;
+  -o-transition: background-color 0.2s ease, border 0.2s ease, color 0.2s ease,
+    opacity 0.2s ease-in-out;
+  transition: background-color 0.2s ease, border 0.2s ease, color 0.2s ease,
+    opacity 0.2s ease-in-out;
+}
+
+.mrgb-20 {
+  margin-bottom: 20px;
+  display: block;
+}
+
+.mrgb-30 {
+  margin-bottom: 30px;
+}
+
+.mrgb-40 {
+  margin-bottom: 40px;
+  display: block;
+}
+
+.mrgb-50 {
+  margin-bottom: 50px;
+  display: block;
+}
+
+.mrgb-60 {
+  margin-bottom: 60px;
+  display: block;
+}
+
+.mrg-0 {
+  margin: 0 auto;
+}
+
+.box {
+  border: 1px solid #d7dbde;
+  border-radius: 4px;
+  padding: 20px;
+  box-shadow: 1px 2px 2px 1px #d7dbde;
+  border-top: 2px solid rgba(165, 42, 42, 0.53);
+}
+
+.login {
+  background: #fff;
+}
+
+.custab {
+  border: 1px solid #ccc;
+  padding: 5px;
+  box-shadow: 3px 3px 2px #ccc;
+  transition: 0.5s;
+  width: 80%;
+}
+
+.custab:hover {
+  box-shadow: 3px 3px 0px transparent;
+  transition: 0.5s;
+}
+
+table tr:nth-child(even) {
+  background-color: #fcfcfc;
+}
+
+table tr:nth-child(odd) {
+  background-color: #f5faff;
+}
+
+table th {
+  background-color: #a5d4e4;
+}
+
+/* =================================================================== */
+/* NAVIGATION
+====================================================================== */
+/*
+  Add some SmartMenus required styles not covered in Bootstrap 3's default CSS.
+ These are theme independent and should work with any Bootstrap 3 theme mod.
+*/
+.navbar-nav ul {
+  width: 100%;
+  min-width: 187px !important;
+  padding: 0;
+  border: 0;
+}
+
+.navbar-toggle {
+  background: #303436;
+  border: none;
+  padding: 10px;
+  border-radius: 3px;
+  margin-top: 13px;
+  margin-right: 5px;
+}
+
+.navbar-default {
+  background: none;
+}
+
+.navbar-default .navbar-toggle:hover,
+.navbar-default .navbar-toggle:focus {
+  background: #303436;
+}
+
+.navbar-default .navbar-toggle .icon-bar {
+  background-color: #fff;
+  height: 3px;
+}
+
+.navbar {
+  margin-bottom: 0;
+  min-height: 35px;
+  border: none;
+  float: right;
+  width: 100%;
+}
+.navbar-nav > li > .dropdown-menu {
+  width: max-content;
+}
+
+/* sub menus arrows */
+.navbar-nav .sub-arrow,
+.navbar-nav .collapsible .sub-arrow {
+  position: static;
+  margin-top: 0;
+  margin-right: 0;
+  margin-left: 6px;
+  display: inline-block;
+  width: 0;
+  height: 0;
+  overflow: hidden;
+  vertical-align: middle;
+  border-top: 4px solid;
+  border-right: 4px dashed transparent;
+  border-bottom: 4px dashed transparent;
+  border-left: 4px dashed transparent;
+}
+
+.navbar-nav > li > .has-submenu .sub-arrow {
+  display: inline-block;
+  font-family: FontAwesome;
+  font-style: normal;
+  font-weight: normal;
+  font-size: 12px;
+  width: 8px;
+  height: 8px;
+  line-height: 8px;
+  border-width: 0px;
+}
+
+.navbar-nav > li > .has-submenu .sub-arrow:before {
+  content: "\f107";
+}
+
+.navbar-nav ul .sub-arrow {
+  position: absolute;
+  right: 0;
+  margin-top: 6px;
+  margin-right: 15px;
+  border-top: 4px dashed transparent;
+  border-bottom: 4px dashed transparent;
+  border-left: 4px solid;
+}
+
+.navbar-nav ul a.has-submenu {
+  padding-right: 30px;
+}
+
+.navbar-default .navbar-collapse,
+.navbar-default .navbar-form {
+  border-color: transparent;
+  padding: 0;
+}
+
+/* scrolling arrows for tall menus */
+.navbar-nav span.scroll-up,
+.navbar-nav span.scroll-down {
+  position: absolute;
+  display: none;
+  visibility: hidden;
+  height: 20px;
+  overflow: hidden;
+  text-align: center;
+}
+
+.navbar-nav span.scroll-up-arrow,
+.navbar-nav span.scroll-down-arrow {
+  position: absolute;
+  top: -2px;
+  left: 50%;
+  margin-left: -8px;
+  width: 0;
+  height: 0;
+  overflow: hidden;
+  border-top: 7px dashed transparent;
+  border-right: 7px dashed transparent;
+  border-bottom: 7px solid;
+  border-left: 7px dashed transparent;
+}
+
+.navbar-nav span.scroll-down-arrow {
+  top: 6px;
+  border-top: 7px solid;
+  border-right: 7px dashed transparent;
+  border-bottom: 7px dashed transparent;
+  border-left: 7px dashed transparent;
+}
+
+.navbar-default .navbar-nav li a {
+  color: #555;
+  text-transform: uppercase;
+  font-size: 14px;
+  font-weight: 500;
+}
+
+.navbar-default .navbar-nav > li {
+}
+
+.navbar-default .navbar-nav > li:first-child {
+  border-left: none;
+}
+
+.navbar-default .navbar-nav > li > a {
+  color: #fff;
+  padding: 15px 9px;
+}
+
+.navbar-default .navbar-nav > li > a:hover,
+.navbar-default .navbar-nav > .active > a,
+.navbar-default .navbar-nav > .active > a:hover,
+.navbar-default .navbar-nav > .open > a,
+.navbar-default .navbar-nav > .open > a:hover {
+  background: none !important;
+  color: #fff;
+}
+
+.navbar-nav > li.active {
+  background: #505b95;
+  border: none;
+}
+
+.navbar-nav > li:hover {
+  background: #3a3a3c;
+  transition: all 0.2s ease-in-out 0s;
+}
+
+.navbar-default .navbar-nav .open .dropdown-menu > .active > a,
+.navbar-default .navbar-nav .open .dropdown-menu > .active > a:hover,
+.navbar-default .navbar-nav .open .dropdown-menu > .active > a:focus {
+  background: #505b95;
+  color: #fff;
+}
+
+.dropdown-menu > .active > a,
+.dropdown-menu > .active > a:focus,
+.dropdown-menu > .active > a:hover {
+  background-color: #fff;
+}
+
+/* add more indentation for 2+ level sub in collapsible mode - Bootstrap normally supports just 1 level sub menus */
+.navbar-nav .collapsible ul .dropdown-menu > li > a,
+.navbar-nav .collapsible ul .dropdown-menu .dropdown-header {
+  padding-left: 35px;
+}
+
+.navbar-nav .collapsible ul ul .dropdown-menu > li > a,
+.navbar-nav .collapsible ul ul .dropdown-menu .dropdown-header {
+  padding-left: 45px;
+}
+
+.navbar-nav .collapsible ul ul ul .dropdown-menu > li > a,
+.navbar-nav .collapsible ul ul ul .dropdown-menu .dropdown-header {
+  padding-left: 55px;
+}
+
+.navbar-nav .collapsible ul ul ul ul .dropdown-menu > li > a,
+.navbar-nav .collapsible ul ul ul ul .dropdown-menu .dropdown-header {
+  padding-left: 60px;
+}
+
+.navbar-nav .dropdown-menu > li > a {
+  white-space: normal;
+  font-size: 13px;
+  padding: 12px 20px;
+  border-bottom: 1px solid #e4e4e4;
+}
+
+.navbar-nav .dropdown-menu > li:last-child a {
+  border-bottom: none;
+}
+
+.navbar-nav .dropdown-menu > li > a:hover {
+  color: #fff;
+  background: #3a3a3c;
+}
+
+.navbar-nav ul.sm-nowrap > li > a {
+  white-space: nowrap;
+}
+
+/* The following will make the sub menus collapsible for small screen devices (it's not recommended editing these) */
+.navbar-nav .collapsible ul {
+  display: none;
+  position: static !important;
+  top: auto !important;
+  left: auto !important;
+  margin-left: 0 !important;
+  margin-top: 0 !important;
+  width: auto !important;
+  min-width: 0 !important;
+  max-width: none !important;
+}
+
+.navbar-nav .collapsible ul.sm-nowrap > li > a {
+  white-space: normal;
+}
+
+.navbar-nav .collapsible iframe {
+  display: none;
+}
+
+/* disable Bootstrap 3's global box-sizing:border-box; for the menus as it doesn't play nice with SmartMenus */
+ul.sm li *,
+ul.sm li *:before,
+ul.sm li *:after {
+  -moz-box-sizing: content-box;
+  -webkit-box-sizing: content-box;
+  box-sizing: content-box;
+}
+
+.nav .open > a,
+.nav .open > a:hover,
+.nav .open > a:focus {
+  border-color: transparent !important;
+  background-color: #727cb6;
+  color: #fff !important;
+}
+
+.total_nav {
+  padding: 0;
+  background: #1a7104;
+  margin-top: 1px;
+}
+
+.navbar-nav {
+  width: 100%;
+}
+
+li.rt,
+li.rt1 {
+  float: right;
+}
+
+.navbar-nav > li.rt:hover {
+  background: none;
+}
+
+/*--------Animation_Hover_Effect_CSS---------------*/
+.navbar-nav > li:hover > ul {
+  -moz-animation: fadeInUp 0.4s ease-in;
+  -webkit-animation: fadeInUp 0.4s ease-in;
+  animation: fadeInUp 0.4s ease-in;
+}
+
+.navbar-nav > li > ul.dropdown-menu li:hover ul {
+  -moz-animation: fadeInUp 0.5s ease-in;
+  -webkit-animation: fadeInUp 0.5s ease-in;
+  animation: fadeInUp 0.5s ease-in;
+}
+
+@-webkit-keyframes fadeInUp {
+  0% {
+    opacity: 0;
+    -webkit-transform: translateY(30px);
+    transform: translateY(30px);
+  }
+
+  100% {
+    opacity: 1;
+    -webkit-transform: translateY(0);
+    transform: translateY(0);
+  }
+}
+
+@keyframes fadeInUp {
+  0% {
+    opacity: 0;
+    -webkit-transform: translateY(30px);
+    -ms-transform: translateY(30px);
+    transform: translateY(30px);
+  }
+
+  100% {
+    opacity: 1;
+    -webkit-transform: translateY(0);
+    -ms-transform: translateY(0);
+    transform: translateY(0);
+  }
+}
+
+.fadeInUp {
+  -webkit-animation-name: fadeInUp;
+  animation-name: fadeInUp;
+}
+
+/*--------//Animation_Hover_Effect_CSS---------------*/
+
+/* ==================================================
+   12. ICON LIST
+================================================== */
+.icon_lists {
+  margin-top: 22px;
+}
+
+.icon_lists .fa-hover a {
+  border-radius: 0;
+  color: #222222;
+  display: block;
+  height: 32px;
+  line-height: 32px;
+  padding-left: 10px;
+}
+
+.icon_lists .fa-hover a .fa {
+  display: inline-block;
+  font-size: 14px;
+  margin-right: 10px;
+  text-align: right;
+  width: 32px;
+}
+
+.icon_lists .fa-hover a:hover {
+  background-color: #727cb6;
+  color: #ffffff;
+  text-decoration: none;
+}
+
+.icon_lists .fa-hover a:hover .fa {
+  font-size: 24px;
+  vertical-align: -3px;
+}
+
+.icon_lists .fa-hover a:hover .text-muted {
+  color: #bbe2d5;
+}
+
+/* ======================================================================== */
+/* 19. BUTTONS                                                              */
+/* ======================================================================== */
+.btn {
+  color: #fff;
+}
+
+.btn-default {
+  background: #727cb6;
+  color: #fff;
+  border: none;
+  border-radius: 2px;
+  transition: all 0.3s ease-in-out;
+  -webkit-transition: all 0.3s ease-in-out;
+  -moz-transition: all 0.3s ease-in-out;
+  -ms-transition: all 0.3s ease-in-out;
+  -o-transition: all 0.3s ease-in-out;
+}
+
+.btn-default:hover {
+  background: #444a6d;
+  color: #fff;
+}
+.btn_b {
+  margin-top: 10px;
+}
+/* Social Buttons
+====================================*/
+
+.btn-social-googleplus {
+  background-color: hsl(0, 0%, 18%);
+}
+
+.btn-social-facebook {
+  background-color: #3453a2;
+}
+
+.btn-social-twitter {
+  background-color: #2abbe3;
+}
+
+.btn-social-pinterest {
+  background-color: #d91f25;
+}
+
+.btn-social-linkedin {
+  background-color: #1f80bb;
+}
+
+.btn-social-stumbleupon {
+  background-color: #e86130;
+}
+
+.btn-social-stumbleupon,
+.btn-social-linkedin,
+.btn-social-pinterest,
+.btn-social-twitter,
+.btn-social-facebook,
+.btn-social-googleplus {
+  color: #fff;
+  border-radius: 0;
+}
+
+.content.elements .btn {
+  border-radius: 2px;
+}
+
+.btn-social-stumbleupon:hover,
+.btn-social-googleplus:hover,
+.btn-social-linkedin:hover,
+.btn-social-pinterest:hover,
+.btn-social-twitter:hover,
+.btn-social-facebook:hover {
+  background: #333;
+  color: #fff;
+}
+
+/* -------------------------------------------------- */
+/*	21. TABS
+/* -------------------------------------------------- */
+.nav-tabs {
+  border: none;
+}
+
+.nav-tabs > li {
+  margin-bottom: -2px;
+}
+
+.nav-tabs > li > a {
+  background: #f8f8f8;
+  border: 1px solid #ebebeb;
+  margin: 0;
+  color: #777777;
+  border-radius: 0;
+}
+
+.nav-tabs > li.active > a,
+.nav-tabs > li.active > a:hover,
+.nav-tabs > li.active > a:focus {
+  border-color: #ebebeb;
+  outline: none;
+  background: white;
+  color: #727cb6;
+  margin: 0 0 -1px 0;
+  border-bottom: none;
+  border-top: 1px solid #727cb6;
+}
+
+.nav-tabs li.active,
+.nav-tabs li.active a,
+.nav-tabs li.active a:hover {
+  border-top: 1px solid #727cb6;
+  color: #727cb6;
+}
+
+ul.nav-tabs li a i {
+  font-size: 24px;
+  font-weight: 500;
+  line-height: 30px;
+}
+
+ul.nav-tabs li.last-tab a {
+  padding: 4px 22px;
+  outline: none;
+}
+
+.tab-content {
+  border: 1px solid #ebebeb;
+  padding: 20px 14px;
+}
+
+.tab-content:first-child {
+  display: block;
+}
+
+.tab-content > h3 {
+  color: #555333;
+  font-size: 20px;
+  font-weight: 600;
+  line-height: 24px;
+  margin-top: 0;
+}
+
+.tab-content > p {
+  font-family: lato;
+  line-height: 20px;
+}
+
+/* =========================================*/
+/* 22. ACCORDION & TOGGLE                   */
+/* =========================================*/
+.panel-group .switch {
+  float: right;
+  font-size: 17px;
+  color: #524d4d;
+}
+
+.panel-group .panel.panel-default {
+  border-color: #e2e2e2;
+  border-right: none;
+  border-left: none;
+  border-radius: 0;
+  margin: 15px 0 0;
+  padding: 3px 0;
+  box-shadow: none;
+}
+
+.panel-group
+  .panel.panel-default
+  > .panel-heading
+  + .panel-collapse
+  .panel-body {
+  border-top-color: #fff;
+}
+
+.panel-group .panel .panel-body {
+  color: #5f5f5f;
+}
+
+.panel-default > .panel-heading {
+  background: #d6d5d5;
+  padding-right: 0;
+}
+
+.panel-group .panel + .panel {
+  margin-top: -2px;
+}
+
+.panel-title {
+  color: #878787;
+  font: lighter 15px/22px "verdana";
+  padding: 0 30px;
+  position: relative;
+}
+
+.panel-title i.fa {
+  color: #524d4d;
+  font-size: 17px;
+  margin: 0 5px;
+}
+
+.panel-title a > i.fa {
+  position: absolute;
+  left: 0;
+  top: 2px;
+}
+
+.panel-title .accordion-icon {
+  position: absolute;
+  right: 0;
+  top: 2px;
+}
+
+.panel-group .panel-body {
+  color: #323232;
+}
+
+.panel-group .panel-default > .panel-heading + .panel-collapse .panel-body {
+  border-top-color: #878787;
+}
+
+.panel-group .panel-title > a {
+  font-size: 14px;
+  line-height: 21px;
+  font-weight: 500;
+  margin-bottom: 0;
+  outline: medium none;
+  text-decoration: none;
+  display: block;
+}
+
+.active_acc .panel-title a {
+  color: #727cb6;
+}
+
+.panel.active_acc,
+.panel:hover {
+  border-top-color: #727cb6;
+}
+
+.panel-heading:hover a,
+.panel-heading:hover .accordion-icon {
+  color: #727cb6;
+}
+
+/* ===================================================== */
+/* 32. List & Bullets									 */
+/* ===================================================== */
+ul {
+  list-style: none;
+  margin: 0;
+  padding: 0;
+  margin-right: 15px;
+}
+
+/* --------list style  CSS---------- */
+.list_style li {
+  font-family: PT sans;
+  font-size: 14px;
+  line-height: 21px;
+  padding: 3px 2px 3px 10px;
+  position: relative;
+}
+
+.list_style li a {
+  color: #666;
+  font-size: 14px;
+  font-weight: 500;
+  letter-spacing: 0;
+  text-decoration: none;
+}
+
+.list_style li a:hover {
+  color: #727cb6;
+  text-decoration: none;
+}
+
+.list_style li a.active {
+  color: #727cb6;
+}
+
+/* --------list style 1 : Simple CSS---------- */
+.list_style li {
+  padding: 3px 2px 3px 12px;
+}
+
+.list_style li:before {
+  font-family: FontAwesome;
+  content: "\f105";
+  font-size: 14px;
+  position: absolute;
+  left: 0;
+  top: 3px;
+}
+
+/* --------list style 2 : Circle CSS---------- */
+.list_style.circle li {
+  padding: 3px 2px 3px 23px;
+}
+
+.list_style.circle li:before {
+  font-family: FontAwesome;
+  content: "\f105";
+  color: #ffffff;
+  background: #727cb6;
+  border-radius: 50%;
+  display: inline-block;
+  height: 16px;
+  line-height: 16px;
+  width: 16px;
+  text-align: center;
+  font-size: 11px;
+  -moz-border-radius: 50%;
+  -webkit-border-radius: 50%;
+  -o-border-radius: 50%;
+  -ms-border-radius: 50%;
+  position: absolute;
+  left: 0;
+  top: 5px;
+}
+
+/* --------list style 3 : Square CSS---------- */
+.list_style.square li {
+  padding: 3px 2px 3px 23px;
+}
+
+.list_style.square li:before {
+  font-family: FontAwesome;
+  content: "\f105";
+  background: #727cb6;
+  display: inline-block;
+  border-radius: 0;
+  color: #ffffff;
+  height: 15px;
+  width: 15px;
+  line-height: 15px;
+  text-align: center;
+  position: absolute;
+  left: 0;
+  top: 5px;
+}
+
+/* --------list style 4 : Star CSS---------- */
+.list_style.star li {
+  padding: 3px 2px 3px 22px;
+}
+
+.list_style.star li:before {
+  font-family: FontAwesome;
+  content: "\f005";
+  display: inline-block;
+  border-radius: 0;
+  color: #727cb6;
+  font-size: 16px;
+  text-align: center;
+  position: absolute;
+  left: 0;
+  top: 3px;
+}
+
+/* --------list style 5 : Right-arrow CSS---------- */
+.list_style.right-arrow li {
+  padding: 3px 2px 3px 20px;
+}
+
+.list_style.right-arrow li:before {
+  font-family: FontAwesome;
+  content: "ï¡";
+  display: inline-block;
+  border-radius: 0;
+  color: #727cb6;
+  font-size: 15px;
+  position: absolute;
+  left: 0;
+  top: 4px;
+}
+
+/* --------list style 6 : Hand CSS---------- */
+.list_style.hand li {
+  padding: 3px 2px 3px 22px;
+}
+
+.list_style.hand li:before {
+  font-family: FontAwesome;
+  content: "ï‚¤";
+  display: inline-block;
+  border-radius: 0;
+  color: #727cb6;
+  position: absolute;
+  left: 0;
+  top: 4px;
+}
+
+/* --------list style 7 : Play  CSS---------- */
+.list_style.play li {
+  padding: 3px 2px 3px 21px;
+}
+
+.list_style.play li:before {
+  font-family: FontAwesome;
+  content: "ï…’";
+  display: inline-block;
+  border-radius: 0;
+  color: #727cb6;
+  font-size: 15px;
+  position: absolute;
+  left: 0;
+  top: 3px;
+}
+
+/* --------list style 8 : Dubble-Right-Arrow  CSS---------- */
+.list_style.dubble-right-arrow li {
+  padding: 3px 2px 3px 17px;
+}
+
+.list_style.dubble-right-arrow li:before {
+  font-family: FontAwesome;
+  content: "ï„";
+  display: inline-block;
+  border-radius: 0;
+  color: #727cb6;
+  font-size: 15px;
+  position: absolute;
+  left: 0;
+  top: 3px;
+}
+
+/* --------list style 9 : Multiple-Icon CSS---------- */
+.multi-icon-list li {
+  font-family: PT sans;
+  font-size: 14px;
+  line-height: 21px;
+  padding: 3px 2px 3px 23px;
+  position: relative;
+}
+
+.multi-icon-list li i.fa {
+  color: #727cb6;
+  font-size: 16px;
+  position: absolute;
+  left: 0;
+}
+
+/* ===================================================== */
+/* Button Up										 */
+/* ===================================================== */
+.btntoTop {
+  width: 44px;
+  height: 44px;
+  position: fixed;
+  bottom: 30px;
+  right: 30px;
+  background-color: #34495e;
+  border-radius: 2px;
+  text-align: center;
+  line-height: 40px;
+  cursor: pointer;
+  z-index: 999;
+  opacity: 0;
+  -webkit-transition: opacity 0.2s ease;
+  transition: opacity 0.2s ease;
+}
+
+.btntoTop:before {
+  content: "\f106";
+  display: inline-block;
+  vertical-align: middle;
+  font: 20px "FontAwesome";
+  color: #b8bcc0;
+}
+
+.btntoTop.active {
+  opacity: 1;
+}
+
+.btntoTop.active:hover {
+  opacity: 0.8;
+}
+
+/* ===================================================== */
+/* form                                                  */
+/* ===================================================== */
+
+form label {
+  margin-bottom: 2px;
+  font-weight: normal;
+}
+
+form input,
+form select,
+form textarea {
+  padding: 6px 10px;
+  border: 1px solid #ccc;
+  border-radius: 2px;
+}
+
+form label,
+form input,
+form select,
+form textarea {
+  width: 100%;
+}
+
+form small {
+  color: green;
+  font-weight: bold;
+}
+
+form input[type="date"] {
+  line-height: 19px;
+}
+
+input[type="date"] {
+  line-height: 19px;
+}
+
+body {
+  background: url("../images/s_b.png");
+  background-repeat: repeat;
+}
+
+.banner {
+  padding: 0;
+  background: url("../images/banner1.png");
+  background-size: cover;
+  background-repeat: no-repeat;
+  height: 116px;
+}
+
+.note {
+  background: #fff;
+  text-align: center;
+  color: #00678a;
+}
+
+.note h3 {
+  color: #e90d0a;
+  margin: 10px 0 5px;
+}
+
+.note hr {
+  border-top: 1px dashed #aaa;
+  margin: 10px 0 20px;
+}
+
+.men hr {
+  border-top: 1px dashed #aaa;
+  margin-top: 0px;
+}
+
+.note a {
+  color: #083396;
+  text-decoration: underline;
+}
+
+.note a:hover {
+  color: #e90d0a;
+}
+
+.app {
+  width: 30%;
+  display: inline-block;
+  float: left;
+  margin-right: 15px;
+  border: 1px solid #d6c90b;
+  padding: 5px 15px;
+  min-height: 414px;
+}
+.app1 {
+  width: 30%;
+  display: inline-block;
+  float: left;
+  margin-right: 15px;
+  border: 1px solid #d6c90b;
+  padding: 5px 15px;
+  min-height: 414px;
+}
+
+.app h3,
+.ins h3 {
+  text-align: center;
+  color: #00678a;
+  margin-top: 5px;
+}
+
+.app label {
+  color: #333;
+  font-weight: normal;
+}
+
+.app label span,
+.ins label span,
+.imm label span,
+.mem label span,
+.cons label span {
+  color: #e90d0a;
+}
+
+.app input[for="association_name"] {
+  margin-bottom: 0;
+}
+
+.ins {
+  width: 68.6%;
+  display: inline-block;
+  float: left;
+  border: 1px solid #d6c90b;
+  padding: 5px 15px;
+}
+
+.ins div.half1 {
+  width: 49%;
+  display: inline-block;
+  float: left;
+  margin-right: 15px;
+}
+
+.ins div.half2 {
+  width: 49%;
+  display: inline-block;
+  float: left;
+}
+
+.ins div:nth-child(8) select.dist {
+  width: 49%;
+  margin-right: 15px;
+  display: inline-block;
+  float: left;
+}
+
+.ins div:nth-child(8) select.mandal {
+  width: 49%;
+  display: inline-block;
+  float: left;
+}
+
+.ins div:nth-child(11) select.dist1 {
+  width: 49%;
+  margin-right: 15px;
+  display: inline-block;
+  float: left;
+}
+
+.ins div:nth-child(11) select.mandal1 {
+  width: 49%;
+  display: inline-block;
+  float: left;
+}
+
+.aap,
+.ins {
+  margin-bottom: 15px;
+}
+
+.mem {
+  width: 68.6%;
+  display: inline-block;
+  float: left;
+  margin-right: 15px;
+  border: 1px solid #d6c90b;
+}
+
+.mem h3 {
+  text-align: center;
+  margin-top: 5px;
+  color: #00678a;
+}
+
+.mem div.name {
+  width: 28%;
+  text-align: right;
+  display: inline-block;
+  float: left;
+}
+
+.mem div.mobile {
+  width: 50%;
+  text-align: right;
+  display: inline-block;
+  float: left;
+}
+
+.mem ol li input {
+  width: 47%;
+  margin: 0 15px 10px 0;
+}
+
+.imm {
+  width: 30%;
+  display: inline-block;
+  float: left;
+  border: 1px solid #d6c90b;
+  padding: 0 15px;
+}
+
+.imm h3,
+.cons h3 {
+  text-align: center;
+  margin: 5px 0 6px;
+  color: #00678a;
+}
+
+.imm div.imm_time select {
+  width: 31%;
+  display: inline-block;
+  float: left;
+  margin-right: 10px;
+}
+
+.imm div.imm_time select:last-child {
+  margin-right: 0;
+}
+
+.imm p {
+  line-height: 10px;
+  margin-top: 3px;
+  margin-bottom: 5px;
+}
+
+.mem,
+.imm {
+  min-height: 307px;
+  margin-bottom: 15px;
+}
+
+.cons {
+  border: 1px solid #d6c90b;
+  padding: 0 15px;
+  margin-bottom: 15px;
+  height: 250px;
+}
+
+.cons div div:nth-child(odd) {
+  width: 14%;
+  display: inline-block;
+  float: left;
+}
+
+.cons div div:nth-child(odd) input {
+  width: 10%;
+  display: inline-block;
+  float: left;
+  margin-right: 5px;
+}
+
+.cons div div:nth-child(odd) p {
+  width: 40px;
+  margin-right: 10px;
+  display: inline-block;
+  float: left;
+}
+
+.cons div div:nth-child(even) {
+  width: 86%;
+  display: inline-block;
+  float: left;
+  margin-bottom: 10px;
+}
+
+.cons div div:nth-child(even) p {
+  margin-bottom: 0px;
+}
+
+.cons div div:nth-child(even) span {
+  font-size: 12px;
+  color: green;
+  font-weight: bold;
+  line-height: 14px;
+}
+
+.app:hover,
+.ins:hover,
+.mem:hover,
+.imm:hover,
+.cons:hover {
+  /*background: #eee;*/
+  border: 1px solid #999;
+}
+
+.btn {
+  border: 1px solid #00678a;
+  background: #00678a;
+  color: #fff;
+  padding: 3px 10px;
+  border-radius: 0;
+}
+
+.btn:hover {
+  background: #008dbc;
+  border: 1px solid #008dbc;
+  color: #fff;
+}
+
+.btn:focus {
+  box-shadow: none;
+}
+
+.btn-default {
+  border: 1px solid #00678a;
+  color: #00678a;
+  background: #fff;
+  padding: 3px 10px;
+  border-radius: 0;
+}
+
+.btn-default:hover {
+  border: 1px solid #00678a;
+  color: #fff;
+  background: #00678a;
+}
+
+.btn.active.focus,
+.btn.active:focus,
+.btn.focus,
+.btn:active.focus,
+.btn:active:focus,
+.btn:focus {
+  outline: none;
+}
+
+.s_b {
+  text-align: center;
+}
+
+.main,
+.acknow {
+  background: #fff;
+  padding: 0;
+}
+
+.main ol {
+  color: #111;
+  margin-bottom: 20px;
+}
+
+.main ol li {
+  line-height: 22px;
+}
+
+.main ol a {
+  color: #083396;
+  text-decoration: underline;
+}
+
+.main ol a:hover {
+  color: #e90d0a;
+}
+
+.main ol li ul li {
+  list-style-type: lower-roman;
+  margin-left: 30px;
+  color: #574f09;
+}
+
+.module {
+  background: #fff;
+  padding: 0;
+}
+
+.module div:nth-child(2) {
+  text-align: right;
+  padding: 5px;
+}
+
+.module h2 {
+  margin: 5px 0 0 0;
+  text-align: center;
+}
+
+.module h4 {
+  margin-top: 0px;
+  margin-bottom: 0px;
+  text-align: center;
+  color: #00678a;
+}
+
+.module h4 span {
+  color: #e90d0a;
+}
+
+.module p {
+  text-decoration: underline;
+  font-weight: bold;
+  text-align: center;
+}
+
+.module div.permission {
+  border: px solid #d6c90b;
+  padding: 15px;
+}
+
+.module div.reg_no {
+  text-align: center;
+}
+
+.module div.reg_no label {
+  width: 44%;
+  display: inline-block;
+  float: left;
+  text-align: right;
+  padding-top: 2px;
+  margin-right: 10px;
+}
+
+.module div.reg_no input {
+  width: 30%;
+  display: inline-block;
+  float: left;
+  margin-bottom: 10px;
+}
+
+.permission .status {
+  border: 1px solid #d6c90b;
+  padding: 5px 15px 10px;
+}
+
+.permission .status h4 {
+  text-align: center;
+  margin: 0px 0 10px;
+}
+
+.permission .status div {
+  margin-bottom: 5px;
+}
+
+.permission .status div:nth-child(2) {
+  padding: 0;
+}
+
+.permission .status div label {
+  width: 36%;
+  display: inline-block;
+  float: left;
+  text-align: right;
+  margin: 3px 10px 0 0;
+}
+
+.permission .status div input,
+.permission .status div textarea {
+  width: 50%;
+  display: inline-block;
+  float: left;
+  margin-bottom: 5px;
+}
+
+.status div:nth-child(1) div {
+  width: 50%;
+  display: inline-block;
+  float: left;
+}
+
+.permission .status div input[type="radio"] {
+  display: inline-block;
+  float: left;
+  width: 3%;
+  margin-top: 7px;
+}
+
+.permission .status div div p {
+  display: inline-block;
+  float: left;
+  margin-right: 5%;
+  text-decoration: none;
+  margin-top: 3px;
+}
+
+.permission .status div:last-child {
+  text-align: center;
+}
+
+.online {
+  background: #fff;
+  padding: 0;
+}
+
+.online h5 {
+  color: #e90d0a;
+  text-align: center;
+}
+
+.online img {
+  width: 100%;
+  text-align: center;
+  height: auto;
+}
+
+.online table {
+  width: 100%;
+}
+
+.online table h3 {
+  margin-top: 0;
+}
+
+.online table h3,
+.online table h4 {
+  margin-bottom: 5px;
+  text-align: center;
+}
+
+.online table tbody tr td {
+  padding: 0px 10px;
+  max-width: 100px;
+}
+
+.online table > tbody > tr > th {
+  padding: 4px 10px 2px;
+}
+
+.online ol li {
+  line-height: 16px;
+}
+
+.login {
+  background: #fff;
+  padding: 0;
+}
+
+.l_a {
+  padding: 30px 0;
+}
+
+.l_f {
+  /* background-image: url('../images/ganesh.png'); */
+  background-position: center;
+  background-repeat: no-repeat;
+  text-align: center;
+  border: 1px solid #ddd;
+  padding: 20px 20px 30px;
+  margin-bottom: 30px;
+}
+
+.l_f h2 {
+  margin-top: 0px;
+  color: #008dbc;
+  margin-bottom: 10px;
+}
+
+.l_f form label {
+  width: 100%;
+  margin-bottom: 0px;
+  text-align: left;
+}
+
+.l_f form input {
+  width: 100%;
+  margin-bottom: 10px;
+  background: none;
+}
+
+.l_f form .btn {
+  text-align: center;
+  margin-top: 20px;
+}
+
+.l_g {
+  background-position: center;
+  background-repeat: no-repeat;
+  text-align: center;
+  border: 1px solid #ddd;
+  padding: 20px 20px 30px;
+  margin-bottom: 30px;
+}
+
+.l_g h2 {
+  margin-top: 0px;
+  color: #008dbc;
+  margin-bottom: 10px;
+}
+
+.l_g form label {
+  width: 28%;
+  margin-bottom: 0px;
+  text-align: left;
+}
+
+.l_g form input {
+  width: 50%;
+  margin-bottom: 10px;
+  background: none;
+}
+
+.l_g form .btn {
+  text-align: center;
+  margin-top: 20px;
+}
+
+.l_m {
+  text-align: center;
+  padding: 25px 15px 5px;
+  border: 1px solid #d7dbdc;
+  margin-bottom: 20px;
+  border-radius: 4px;
+  box-shadow: 2px 2px 2px 2px #cecbcb;
+  /*    background-color: #f9f9f9;*/
+}
+
+.l_m h1 {
+  margin-top: 0px;
+  color: #189218;
+  margin-bottom: 10px;
+}
+.l_m h4 {
+  font-family: cursive;
+}
+
+.l_m form label {
+  width: 100%;
+  margin-bottom: 0px;
+  text-align: left;
+}
+
+.l_m form input {
+  width: 50%;
+  margin-bottom: 10px;
+  background: none;
+}
+
+.l_m form .btn {
+  text-align: center;
+  margin-top: 0px;
+}
+
+div.ref label {
+  width: 20%;
+  display: inline-block;
+  float: left;
+  padding-top: 7px;
+}
+
+div.ref input {
+  width: 30%;
+  display: inline-block;
+  float: left;
+}
+
+.footer {
+  background: #333;
+  padding: 10px 15px;
+  text-align: center;
+  color: #dedede;
+  font-size: 12px;
+}
+
+.footer span {
+  color: #ffe500;
+}
+
+.lk-pass button {
+  width: 100%;
+  margin-bottom: 15px;
+}
+
+.modal-header {
+  border-bottom: 0px;
+}
+.modal-footer {
+  border-top: 0px;
+}
+button.close {
+  border: 1px solid #aaa;
+  padding: 2px 5px;
+  opacity: 0.8;
+}
+
+.live-pass {
+  text-align: center;
+}
+.live-pass h3 span {
+  padding: 5px 20px;
+  background: #e90d0a;
+  color: #fff;
+}
+.live-pass h3 span a {
+  color: #fff;
+}
+
+/* ===================================================== */
+/* Media Query										 */
+/* ===================================================== */
+
+@media only screen and (min-width: 980px) and (max-width: 1280px) {
+  .banner {
+    height: 100px;
+  }
+
+  .ins {
+    width: 68%;
+  }
+
+  .ins div.half1,
+  .ins div.half2 {
+    width: 48.6%;
+  }
+
+  .imm {
+    width: 29.6%;
+  }
+
+  .imm div.imm_time select {
+    width: 30.6%;
+  }
+
+  .ins div:nth-child(8) select.dist {
+    width: 48.6%;
+    margin-right: 15px;
+    display: inline-block;
+    float: left;
+  }
+
+  .ins div:nth-child(8) select.mandal {
+    width: 48.6%;
+    display: inline-block;
+    float: left;
+  }
+
+  .ins div:nth-child(11) select.dist1 {
+    width: 48.6%;
+    margin-right: 15px;
+    display: inline-block;
+    float: left;
+  }
+
+  .ins div:nth-child(11) select.mandal1 {
+    width: 48.6%;
+    display: inline-block;
+    float: left;
+  }
+}
+
+@media only screen and (max-width: 980px) {
+  .banner {
+    height: 80px;
+  }
+
+  input[type="date"] {
+    line-height: 21px;
+  }
+
+  .btn {
+    margin-bottom: 5px;
+  }
+
+  .permission .status div input[type="radio"] {
+    margin-right: 5px;
+  }
+}
+
+@media (min-width: 768px) and (max-width: 979px) {
+  .container {
+    width: 100%;
+  }
+
+  .app,
+  .ins,
+  .mem,
+  .imm,
+  .cons {
+    width: 100%;
+    padding-bottom: 10px;
+    margin-bottom: 15px;
+    display: block;
+  }
+
+  .app {
+    min-height: auto;
+  }
+
+  .app label {
+    width: 40%;
+    display: inline-block;
+    float: left;
+    text-align: right;
+    margin-right: 10px;
+  }
+
+  .app input,
+  .app textarea {
+    width: 40%;
+    display: inline-block;
+    float: left;
+  }
+
+  .ins div.half1,
+  .ins div.half2 {
+    width: 100%;
+  }
+
+  .half1 label,
+  .half2 label,
+  .ins label {
+    width: 40%;
+    display: inline-block;
+    float: left;
+    text-align: right;
+    margin-right: 10px;
+  }
+
+  .half1 input,
+  .half1 textarea,
+  .half1 select,
+  .half2 input,
+  .half2 textarea,
+  .half2 select,
+  .ins select {
+    width: 40%;
+    display: inline-block;
+    float: left;
+  }
+
+  .ins {
+    min-height: 320px;
+  }
+
+  .ins div:nth-child(8) select.dist {
+    width: 18%;
+    margin-right: 5px;
+  }
+
+  .ins div:nth-child(8) select.mandal {
+    width: 21%;
+    margin-right: 5px;
+  }
+
+  .ins div:nth-child(11) select.dist1 {
+    width: 18%;
+    margin-right: 5px;
+  }
+
+  .ins div:nth-child(11) select.mandal1 {
+    width: 21%;
+    margin-right: 5px;
+  }
+
+  .app small,
+  .ins div:nth-child(8) small {
+    width: 100%;
+    display: inline-block;
+    margin-top: -5px;
+    margin-left: 41%;
+  }
+
+  .imm {
+    padding-left: 30%;
+    padding-right: 30%;
+  }
+
+  .cons {
+    height: 300px;
+  }
+
+  .cons div div:nth-child(odd) {
+    width: 20%;
+  }
+
+  .cons div div:nth-child(even) {
+    width: 79%;
+  }
+
+  .mem div.name {
+    width: 30%;
+  }
+
+  .mem div.mobile {
+    width: 44%;
+  }
+
+  .mem {
+    padding-right: 15%;
+    padding-left: 15%;
+  }
+
+  .mem ol li input {
+    width: 40%;
+  }
+
+  .tempe {
+    margin-left: 60px;
+  }
+
+  .d_s {
+    overflow: scroll;
+  }
+
+  .banner img {
+    width: 100%;
+  }
+}
+
+@media only screen and (max-width: 768px) {
+  .half1,
+  .half1 label,
+  .half1 select,
+  .half1 input {
+    width: 100%;
+  }
+  .half1 label {
+    float: left;
+    text-align: left;
+  }
+  .half1 select,
+  .half1 input {
+    margin-bottom: 10px;
+  }
+}
+
+@media only screen and (max-width: 767px) {
+  .navbar-default .navbar-nav li a {
+    color: #fff;
+  }
+
+  .navbar {
+    background: none;
+    border-color: transparent;
+    float: none;
+  }
+
+  .navbar.scroll-to-fixed-fixed {
+    box-shadow: 0 0 10px #9c9999;
+  }
+
+  .navbar-nav {
+    position: relative;
+    z-index: 1;
+    background: #303436;
+    margin: 0;
+  }
+
+  .navbar-collapse {
+    position: absolute;
+    width: 100%;
+  }
+
+  .navbar-nav > li > a:hover,
+  .navbar-nav > li > a:focus,
+  .navbar-nav > li.active > a,
+  .navbar-default .navbar-nav > .active > a,
+  .navbar-default .navbar-nav > .active > a:hover,
+  .navbar-default .navbar-nav > .active > a:focus,
+  .navbar-default .navbar-nav > .open > a,
+  .navbar-default .navbar-nav > .open > a:hover,
+  .navbar-default .navbar-nav > .open > a:focus,
+  .navbar-default .navbar-nav .open .dropdown-menu > .active > a,
+  .navbar-default .navbar-nav .open .dropdown-menu > .active > a:hover,
+  .navbar-default .navbar-nav .open .dropdown-menu > .active > a:focus,
+  .navbar-default .navbar-nav .open .dropdown-menu > .disabled > a,
+  .navbar-default .navbar-nav .open .dropdown-menu > .disabled > a:hover,
+  .navbar-default .navbar-nav .open .dropdown-menu > .disabled > a:focus {
+    background: #505b95 !important;
+    color: #fff !important;
+  }
+
+  .navbar-nav > li ul > li:first-child > a {
+    border-top: none;
+  }
+
+  .navbar-default .navbar-nav > li {
+    border-bottom: 1px solid rgba(255, 255, 255, 0.54);
+  }
+
+  .navbar-default .navbar-nav > li > a,
+  .navbar-nav .dropdown-menu > li > a {
+    padding-top: 12px !important;
+    padding-bottom: 12px !important;
+    border-bottom: none !important;
+  }
+
+  .navbar-default .navbar-nav li a {
+    color: #fff;
+  }
+
+  .navbar-nav .open .dropdown-menu > li > a,
+  .navbar-nav .open .dropdown-menu .dropdown-header,
+  .navbar-default .navbar-nav .open .dropdown-menu > li > a {
+    background: #303436;
+    padding-left: 45px;
+    color: #fff;
+    font-size: 13px;
+  }
+
+  .dropdown-menu.sm-nowrap > li {
+    background: #303436;
+    border-top: 1px solid rgba(255, 255, 255, 0.54);
+  }
+
+  .navbar-default .navbar-nav .open .dropdown-menu > li > a:hover,
+  .navbar-default .navbar-nav .open .dropdown-menu > li > a:focus {
+    background: #505b95;
+    color: #fff;
+  }
+
+  .navbar-nav .sub-arrow,
+  .navbar-nav .collapsible .sub-arrow {
+    float: right;
+    color: #fff;
+  }
+
+  .navbar-nav > li > ul:before {
+    content: "";
+    display: none;
+  }
+
+  .navbar-nav > li > .has-submenu .sub-arrow {
+    font-size: 14px;
+    font-weight: bold;
+    width: 10px;
+  }
+
+  .navbar-nav > li.active {
+    color: #fff;
+  }
+
+  .navbar-nav > li:hover > ul {
+    -moz-animation: none;
+    -webkit-animation: none;
+    animation: none;
+  }
+
+  .navbar-nav > li > ul.dropdown-menu li:hover ul {
+    -moz-animation: none;
+    -webkit-animation: none;
+    animation: none;
+  }
+}
+
+@media only screen and (min-width: 481px) and (max-width: 767px) {
+}
+
+@media only screen and (max-width: 480px) {
+  .l_m div {
+    float: none;
+    height: 100%;
+  }
+
+  .banner {
+    height: 41px;
+  }
+
+  .module div.reg_no input {
+    width: 50%;
+  }
+
+  .permission .status div label {
+    width: 100%;
+    text-align: left;
+  }
+
+  .permission .status div input,
+  .permission .status div textarea {
+    width: 100%;
+  }
+
+  .permission .status div input[type="radio"] {
+    width: 5%;
+  }
+
+  .note h3 {
+    line-height: 20px;
+  }
+
+  .app,
+  .ins,
+  .mem,
+  .imm,
+  .cons {
+    width: 100%;
+    margin-bottom: 15px;
+  }
+
+  .ins div.half1,
+  .ins div.half2 {
+    width: 100%;
+  }
+
+  .ins div:nth-child(8) select.dist {
+    width: 100%;
+  }
+
+  .ins div:nth-child(8) select.mandal {
+    width: 100%;
+  }
+
+  .ins div:nth-child(11) select.dist1 {
+    width: 100%;
+  }
+
+  .ins div:nth-child(11) select.mandal1 {
+    width: 100%;
+  }
+
+  .mem div.name {
+    width: 37%;
+  }
+
+  .mem ol li input {
+    width: 44%;
+  }
+
+  .mem {
+    min-height: 240px;
+  }
+
+  .cons div div:nth-child(odd) {
+    width: 18%;
+  }
+
+  .cons div div:nth-child(even) {
+    width: 80%;
+  }
+
+  .cons div div:nth-child(odd) input {
+    width: 18%;
+  }
+
+  .cons div div:nth-child(odd) p {
+    width: 32px;
+    margin-right: 0;
+    margin-bottom: 0px;
+  }
+
+  .cons {
+    height: 500px;
+  }
+
+  .l_f {
+    margin: 0px 15px;
+  }
+
+  .l_g {
+    margin: 0px 15px;
+  }
+
+  .d_s {
+    overflow: scroll;
+  }
+
+  .banner img {
+    width: 100%;
+  }
+}
+
+/*
+To change this license header, choose License Headers in Project Properties.
+To change this template file, choose Tools | Templates
+and open the template in the editor.
+*/
+/* 
+    Created on : Aug 5, 2019, 1:20:18 PM
+    Author     : rokan
+*/

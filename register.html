@@ -1,0 +1,198 @@
+<!DOCTYPE html>
+<html lang="en">
+<head>
+    <meta charset="UTF-8">
+    <meta http-equiv="X-UA-Compatible" content="IE=edge">
+    <meta name="viewport" content="width=device-width, initial-scale=1.0">
+    <link rel="stylesheet" href="css/register.css">
+    <link rel="stylesheet" href="https://cdn.jsdelivr.net/npm/bootstrap@4.6.0/dist/css/bootstrap.min.css" integrity="sha384-B0vP5xmATw1+K9KRQjQERJvTumQW0nPEzvF6L/Z6nronJ3oUOFUFpCjEUQouq2+l" crossorigin="anonymous">
+    <title>APITA</title>
+</head>
+<body>
+    <body>
+        <!--Start Header-->
+            <div class="container note "> 
+                <h3 style="color: #000;">APITA &nbsp; Andhra Pradesh Information Technology Academy 2021</h3>
+                <hr>
+                <div style="text-align: center; color: #000; font-weight: bold; font-size: 16px;"></div>
+            </div>
+            <div class="container" style="background: #fff;">
+                <form id="apita" method="POST" action="/register" >                  
+                    <div class="ins" style="width:100%">
+                        <h3 style="color:#000; font-size: 20px;">User Details<hr style="border-top: 1px dotted #000; margin-top: 2px;"></h3>
+                        <div class="half1">
+                            <label for="name">Student Full Name<span>*</span></label>
+                            <input id="name" name="name" required="true" type="text" /> 
+                        </div>
+                        <div class="half2">
+                            <label for="gender">Gender<span>*</span></label>
+                            <select id="gender" name="gender" required="true">  
+                                <option path="gender" value="">---Select here---</option>
+                                <option value="male">Male</option>
+                                <option value="female">Female</option>
+                            </select>
+                        </div>
+                        <div class="half1">
+                            <label for="fathername">Father's Full Name<span>*</span></label>
+                            <input id="father-name" name="fathername"  required="true" type="text" />
+                        </div>
+                        <div class="half2">
+                            <label for="mothername">Mother's Full Name<span>*</span></label>
+                            <input id="mother-name" name="mothername"  required="true" type="text" />
+                        </div>
+    
+                        <div class="half1">
+                            <label for="fatheroccupation">Father-Occupation<span>*</span></label>
+                            <input id="father-occupation" name="fatheroccupation" required="true" type="text" />
+                        </div> 
+                        <div class="half2">
+                            <label for="motheroccupation">Mother-Occupation<span>*</span></label>
+                            <input id="mother-occupation" name="motheroccupation" required="true" type="text" />
+                            </div>
+    
+                            <div class="half1">
+                                <label for="password">Password<span>*</span></label>
+                                <input id="password" name="password" required="true" type="password" />
+                        </div>
+                        <div class="half2">
+                            <label for="dob">Date of Birth<span>*</span></label>
+                            <input type="date" id="date-of-birth" name="dob">
+                        </div>
+                        <div class="half1">
+                            <label for="contact">Student Mobile No.<span>*</span></label>
+                            <input id="contact" name="contact" pattern="[6789][0-9]{9}" required="true" type="text" value="" maxlength="10"/>
+                        </div>
+    
+                        <div class="half2">
+                            <label for="contactparent">Parent Mobile No.<span>*</span></label>
+                            <input id="contact-parent" name="contactparent" pattern="[6789][0-9]{9}" required="true" type="text" value="" maxlength="10"/>
+                        </div>
+    
+                        <div class="half1">
+                            <label for="personalmailid">Personal Mail-Id<span>*</span></label>
+                            <input id="personal-mail-id" name="personalmailid" required="true" type="email" />
+                        </div> 
+                        <div class="half2">
+                            <label for="collegemailid">College Mail-Id<span>*</span></label>
+                            <input id="college-mail-id" name="collegemailid" required="true" type="email" />                           
+                        </div> 
+                        <div class="half1">
+                            <label for="community">Community<span>*</span></label>
+                            <select id="community" name="community" required="true" >  
+                                <option value="">---Select here---</option>
+                                <option value="OC">OC</option>
+                                <option value="BC-A">BC-A</option>
+                                <option value="BC-B">BC-B</option>
+                                <option value="BC-C">BC-C</option>
+                                <option value="BC-D">BC-D</option> 
+                                <option value="BC-E">BC-E</option>
+                                <option value="SC">SC</option>
+                                <option value="ST">ST</option>
+                            </select>
+                        </div> 
+                        <div class="half2">
+                            <label for="meesevano">Mee-Seva Certificate Number<span>*</span></label>
+                            <input id="mee-seva-no" name="meesevano" required="true" type="text" />                           
+                        </div> 
+                        <div class="half1">
+                            <label for="aadhar">Aadhar Number<span>*</span></label>
+                            <input id="aadhar" name="aadhar" required="true" type="text" />                           
+                        </div>
+                        <div class="half2">
+                            <label for="purpose">&nbsp;</label>
+                                &nbsp;
+                            </div>
+                        <div class="clearfix"></div>
+                        <h3 class="mt-2" style="color:#000; font-size: 20px;">Education Details<hr style="border-top: 1px dotted #000; margin-top: 2px;"></h3>
+    
+    
+                        <div class="half1">
+                            <label for="sscpercentage">SSC-Percentage<span>*</span></label>
+                            <input id="ssc-percentage" name="sscpercentage" required="true" />                      
+                        </div> 
+                        <div class="half2">
+                            <label for="sscyear">SSC-Year of Passing<span>*</span></label>
+                            <input id="ssc-year" name="sscyear" required="true" />   
+                        </div>
+                        <div class="half1">
+                            <label for="interpercentage">Inter/Diploma Percentage<span>*</span></label>
+                            <input id="inter-percentage" name="interpercentage" required="true" />  
+                        </div>
+    
+                        <div class="half2">
+                            <label for="interyear">Inter/Diploma-Year of Passing<span>*</span></label>
+                            <input id="inter-year" name="interyear" required="true" />  
+                        </div>
+    
+                        <div class="half1">
+                            <label for="currentcollegename">Current Studying College Full Name <span>*</span></label>
+                            <input id="current-collegename" name="currentcollegename" required="true" type="text" />
+                            
+                        </div>
+                        <div class="half2">
+                            <label for="district">District <span>*</span></label>
+                            <input id="district" name="district" required="true" type="text" />
+                            
+                        </div>
+    
+                        <div class="half1">
+                            <label for="bebtechpercentage">BE/BTech Aggregate Percentage </label>
+                            <input id="be-btech-percentage" name="bebtechpercentage"  type="text" />
+                            
+                        </div>
+    
+                        <div class="half2">
+                            <label for="bebtechyop">BE/Btech Year of passing </label>
+                            <input id="be/btech-yop" name="bebtechyop"  type="text" />
+                        </div>
+
+                        <div class="half1">
+                            <label for="bebtechbranch">BE/Btech Branch </label>
+                            <input id="be/btech-branch" name="bebtechbranch" type="text" />
+                        </div>
+                        <div class="half2">
+                            <label for="noofbacklogs">No. of backlogs </label>
+                            <input id="no-of-backlogs" name="noofbacklogsbtech"  type="text" />
+                        </div>
+                        <div class="half1">
+                            <label for="bscpercentage">BSC Aggregate Percentage </label>
+                            <input id="bsc-btech-percentage" name="bscpercentage"  type="text" />
+                            
+                        </div>
+                        <div class="half2">
+                            <label for="bscyop">BSC Year of passing </label>
+                            <input id="bsc-yop" name="bscyop"  type="text" />
+                        </div>
+                        <div class="half1">
+                            <label for="bscbranch">BSC Branch </label>
+                            <input id="bsc" name="bscbranch"  type="text" />
+                        </div>
+                        <div class="half2">
+                            <label for="noofbacklogs">No. of backlogs </label>
+                            <input id="no-of-backlogs" name="noofbacklogsbsc"  type="text" />
+                        </div>
+                        <div class="half1">
+                            <label for="mcabtechpercentage">MCA Aggregate Percentage </label>
+                            <input id="mca-btech-percentage" name="mcabtechpercentage"  type="text" />
+                            
+                        </div>
+                        <div class="half2">
+                            <label for="mcayop">MCA Year of passing </label>
+                            <input id="mca-yop" name="mcayop"  type="text" />
+                        </div>
+                        <div class="half1">
+                            <label for="mcabranch">MCA Branch </label>
+                            <input id="mca-branch" name="mcabranch"  type="text" />
+                        </div>
+                        <div class="half2">
+                            <label for="noofbacklogs">No. of backlogs </label>
+                            <input id="no-of-backlogs" name="noofbacklogsmca"  type="text" />
+                        </div>
+                        <input class="btn-primary mt-3 mb-3 text-white" id="submit"  type="submit"/>
+                                </form>
+                                </div>
+                                <script src="https://code.jquery.com/jquery-3.5.1.slim.min.js" integrity="sha384-DfXdz2htPH0lsSSs5nCTpuj/zy4C+OGpamoFVy38MVBnE+IbbVYUew+OrCXaRkfj" crossorigin="anonymous"></script>
+                                <script src="https://cdn.jsdelivr.net/npm/popper.js@1.16.1/dist/umd/popper.min.js" integrity="sha384-9/reFTGAW83EW2RDu2S0VKaIzap3H66lZH81PoYlFhbGU+6BZp6G7niu735Sk7lN" crossorigin="anonymous"></script>
+                                <script src="https://cdn.jsdelivr.net/npm/bootstrap@4.6.0/dist/js/bootstrap.min.js" integrity="sha384-+YQ4JLhjyBLPDQt//I+STsc9iw4uQqACwlvpslubQzn4u2UU2UFM80nGisd026JF" crossorigin="anonymous"></script>
+</body>
+</html>
